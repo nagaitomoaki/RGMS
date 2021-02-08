@@ -1,14 +1,14 @@
+/*screen size 540x960*/
 #include"monsterstrike.h"
 
-bool exitFlag = false;
+bool isExitFlag = true;
 
 int main() {
 
-	MonsterStrike monsterStrike;
-
-	while (exitFlag) {
+	while (isExitFlag) {
+		MonsterStrike monsterStrike;
 		monsterStrike.proceedStory();
-		monsterStrike.saveData();
+		//monsterStrike.saveData();
 	}
 	return 0;
 }
